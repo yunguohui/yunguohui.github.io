@@ -134,7 +134,7 @@
 <meta property="og:site_name" content="come on boy">
 <meta property="og:description" content="首先我们可以查看这三者的ip地址在Windows的命令框输入cmd，回车后输入”ipconfig”，即可看到本地的-   ip地址 2240在串口的界面输入ifconfig即可查看ip ubuntu在命令框输入ifconfig即可查看ip  建立局域网时要有相同的网关，相同的ip（如192.168.0.X）x可任意写下面我们了解如何修改ip地址 Windows的ip设置：打开控制面板里的”网络链接">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-07T10:43:06.460Z">
+<meta property="og:updated_time" content="2018-12-07T11:07:32.248Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Windows、2440、Ubuntu之间建局域网">
 <meta name="twitter:description" content="首先我们可以查看这三者的ip地址在Windows的命令框输入cmd，回车后输入”ipconfig”，即可看到本地的-   ip地址 2240在串口的界面输入ifconfig即可查看ip ubuntu在命令框输入ifconfig即可查看ip  建立局域网时要有相同的网关，相同的ip（如192.168.0.X）x可任意写下面我们了解如何修改ip地址 Windows的ip设置：打开控制面板里的”网络链接">
@@ -409,7 +409,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-12-07T02:43:06-08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-12-07T03:07:32-08:00">
                 2018-12-07
               </time>
             
@@ -442,6 +442,37 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
 
           
 
@@ -467,7 +498,7 @@
 <p>建立局域网时要有相同的网关，相同的ip（如192.168.0.X）x可任意写<br>下面我们了解如何修改ip地址</p>
 <h3 id="Windows的ip设置："><a href="#Windows的ip设置：" class="headerlink" title="Windows的ip设置："></a>Windows的ip设置：</h3><p>打开控制面板里的”网络链接”，右击”WLAN”，选择”属性”，双击”Internet协议版本4（TCP/IPv4）”在”备用配置”选择”用户配置”，接着输入ip地址，子网掩码（255.255.255.0），默认网关即可。</p>
 <h3 id="虚拟机的ip设置："><a href="#虚拟机的ip设置：" class="headerlink" title="虚拟机的ip设置："></a>虚拟机的ip设置：</h3><p>1.先运行虚拟机，在其界面点击”编辑”，然后选择”虚拟网络编辑器”，点击”更改设置”，查看有没有”VMnet0”，如果没有可选择添加网络，添加一个，之后选择”桥接模式”，选中合适的网络。<br>2.打开虚拟机里的系统（如ubuntu），在命令界面敲击”ifconfig”可查看IP地址。<br>3.输入配置ip的命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$:sudo ifconfig eth0 IP地址 netmask 子网掩码&lt;br&gt;</span><br><span class="line">$:sudo route add default gw 网关&lt;br&gt;</span><br></pre></td></tr></table></figure></p>
-<p>4.”cd /etc/network”,”sudo vi interfaces”,按a后可修改文件，在”auto lo iface lo inet loopback”插入一下代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">$:auto eth0&lt;br&gt;</span><br><span class="line">$:ifache eth0 inet static&lt;br&gt;</span><br><span class="line">$:address 192.168.x.x&lt;br&gt;</span><br><span class="line">$:netmak 255.255.255.0&lt;br&gt;</span><br><span class="line">$:gateway 192.168.0.x&lt;br&gt;</span><br></pre></td></tr></table></figure></p>
+<p>4.”cd /etc/network”,”sudo vi interfaces”,按a后可修改文件，在”auto lo iface lo inet loopback”插入一下代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$:auto eth0&lt;br&gt;</span><br><span class="line">$:ifache eth0 inet static&lt;br&gt;</span><br><span class="line">$:address 192.168.x.x&lt;br&gt;</span><br><span class="line">$:netmak 255.255.255.0&lt;br&gt;</span><br><span class="line">$:gateway 192.168.0.x&lt;br&gt;</span><br></pre></td></tr></table></figure></p>
 <p>之后按”Esc”,”:wq”即可</p>
 <h3 id="2440的ip设置"><a href="#2440的ip设置" class="headerlink" title="2440的ip设置:"></a>2440的ip设置:</h3><p>在串口界面先”ifconfig”查看ip，再敲入”cd etc/init.d”,进入到”init.d”目录下，可用”ls”查看该目录的内容，”vi rcS”打开rsS文件，修改里面的ip即可，修改后保存，”Ctrl z”退出后可查看修改后的ip。<br>三者的ip修改完后可在每个相应的命令框敲入”ping ip”（ip为修改后的每个设备的ip地址，如ping 192.168.x.x）有如下显示时，证明修改成功。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$:正在 Ping 192.168.x.x 具有 32 字节的数据:&lt;br&gt;</span><br><span class="line">$:来自 192.168.x.x 的回复: 字节=32 时间&lt;1ms TTL=128&lt;br&gt;</span><br><span class="line">$:来自 192.168.x.x 的回复: 字节=32 时间&lt;1ms TTL=128&lt;br&gt;</span><br><span class="line">$:来自 192.168.x.x 的回复: 字节=32 时间&lt;1ms TTL=128&lt;br&gt;</span><br><span class="line">$:来自 192.168.x.x 的回复: 字节=32 时间&lt;1ms TTL=128&lt;br&gt;</span><br></pre></td></tr></table></figure></p>
 
@@ -577,6 +608,11 @@ var jiathis_config={
 
 
 
+
+
+
+
+
         </div>
         
           
@@ -623,7 +659,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -636,7 +672,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
@@ -745,7 +781,10 @@ var jiathis_config={
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2018.10.10 &mdash; <span itemprop="copyrightYear">2018</span>
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<div class="copyright">&copy; 2018.10.10 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -763,6 +802,17 @@ var jiathis_config={
 
 
 
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_pv"></span>
+</span>
+</div>
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共字</span>
+</div>
 
         
 <div class="busuanzi-count">
