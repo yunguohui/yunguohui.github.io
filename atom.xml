@@ -40,30 +40,6 @@
   </entry>
   
   <entry>
-    <title>虚拟机及ubuntu的安装</title>
-    <link href="https://yunguohui.github.io/2018/12/07/Ubuntu/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%8F%8Aubuntu%E7%9A%84%E5%AE%89%E8%A3%85/"/>
-    <id>https://yunguohui.github.io/2018/12/07/Ubuntu/虚拟机及ubuntu的安装/</id>
-    <published>2018-12-07T10:36:10.000Z</published>
-    <updated>2018-12-07T10:41:59.498Z</updated>
-    
-    <content type="html"><![CDATA[<ul><li>在 windows 系统下安装一个虚拟机，点击 <a href="https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html" target="_blank" rel="noopener">下载</a>，选择安装方式： Workstation 15 Pro for Linux Download Now 。</li><li>安装好虚拟机以后，接着下载 ubuntu 系统，点击<a href="https://www.ubuntu.com/download/desktop/thank-you?country=US&amp;version=18.04.1&amp;architecture=amd64" target="_blank" rel="noopener">下载</a>，下载好后在虚拟机中选择 [创建虚拟机] ，找到下载好的安装包进行安装（.iso文件）,安装的时候硬盘最好分配大于 50g 。</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;ul&gt;
-&lt;li&gt;在 windows 系统下安装一个虚拟机，点击 &lt;a href=&quot;https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html&quot; target=&quot;_blank&quot; r
-      
-    
-    </summary>
-    
-    
-      <category term="Ubuntu" scheme="https://yunguohui.github.io/tags/Ubuntu/"/>
-    
-  </entry>
-  
-  <entry>
     <title>c语言基础知识</title>
     <link href="https://yunguohui.github.io/2018/12/07/language/c%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     <id>https://yunguohui.github.io/2018/12/07/language/c语言基础知识/</id>
@@ -84,6 +60,30 @@
     
     
       <category term="language" scheme="https://yunguohui.github.io/tags/language/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>虚拟机及ubuntu的安装</title>
+    <link href="https://yunguohui.github.io/2018/12/07/Ubuntu/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%8F%8Aubuntu%E7%9A%84%E5%AE%89%E8%A3%85/"/>
+    <id>https://yunguohui.github.io/2018/12/07/Ubuntu/虚拟机及ubuntu的安装/</id>
+    <published>2018-12-07T10:36:10.000Z</published>
+    <updated>2018-12-07T10:41:59.498Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>在 windows 系统下安装一个虚拟机，点击 <a href="https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html" target="_blank" rel="noopener">下载</a>，选择安装方式： Workstation 15 Pro for Linux Download Now 。</li><li>安装好虚拟机以后，接着下载 ubuntu 系统，点击<a href="https://www.ubuntu.com/download/desktop/thank-you?country=US&amp;version=18.04.1&amp;architecture=amd64" target="_blank" rel="noopener">下载</a>，下载好后在虚拟机中选择 [创建虚拟机] ，找到下载好的安装包进行安装（.iso文件）,安装的时候硬盘最好分配大于 50g 。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;在 windows 系统下安装一个虚拟机，点击 &lt;a href=&quot;https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html&quot; target=&quot;_blank&quot; r
+      
+    
+    </summary>
+    
+    
+      <category term="Ubuntu" scheme="https://yunguohui.github.io/tags/Ubuntu/"/>
     
   </entry>
   
